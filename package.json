@@ -1,14 +1,14 @@
 {
-  "name": "react-head",
+  "name": "inferno-head",
   "version": "2.0.0",
-  "description": "SSR-ready Document Head management for React 16+",
+  "description": "SSR-ready Document Head management for Inferno",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "files": [
     "dist"
   ],
   "scripts": {
-    "prepare": "npm run lint && npm run test && npm run build",
+    "prepare": "npm run lint && npm run build",
     "build": "rollup -c",
     "build:watch": "rollup -c --watch",
     "example": "cd example && npm i && npm start",
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tizmagik/react-head.git"
+    "url": "git+https://github.com/mjw56/inferno-head.git"
   },
   "keywords": [
     "react",
@@ -38,9 +38,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tizmagik/react-head/issues"
+    "url": "https://github.com/mjw56/inferno-head/issues"
   },
-  "homepage": "https://github.com/tizmagik/react-head#readme",
+  "homepage": "https://github.com/mjw56/inferno-head#readme",
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.47",
     "@babel/plugin-transform-modules-commonjs": "^7.0.0-beta.47",
@@ -78,7 +78,8 @@
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16",
-    "prop-types": ">=15"
+    "prop-types": ">=15",
+    "inferno": "^5.0.6"
   },
   "jest": {
     "roots": [
@@ -101,8 +102,5 @@
     "singleQuote": true,
     "tabWidth": 2,
     "printWidth": 100
-  },
-  "dependencies": {
-    "inferno": "^5.0.6"
   }
 }
