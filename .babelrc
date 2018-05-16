@@ -4,6 +4,15 @@
     "@babel/stage-3",
     "@babel/react"
   ],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["."],
+      "alias": {
+          "react": "inferno-compat",
+          "react-dom": "inferno-compat"
+      }
+    }]
+  ],
   "env": {
     "test": {
       "plugins": [
