@@ -1,14 +1,15 @@
 {
   "name": "inferno-head",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "SSR-ready Document Head management for Inferno",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "prepare": "npm run lint && npm run build",
+    "prepare": "npm run lint && npm run build && cp index.d.ts ./dist",
     "build": "rollup -c",
     "build:watch": "rollup -c --watch",
     "example": "cd example && npm i && npm start",
